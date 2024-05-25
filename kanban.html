@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1, shrink-to-fit=no"
+		/>
+
+		<style>
+			nav {
+				display: flex;
+				justify-content: space-evenly;
+			}
+			.row {
+				display: flex;
+			}
+
+			.arrow {
+				border: solid black;
+				border-width: 0 3px 3px 0;
+				display: flex;
+				margin: auto;
+				padding: 3px;
+			}
+
+			.left {
+				transform: rotate(135deg);
+				-webkit-transform: rotate(135deg);
+			}
+
+			.right {
+				transform: rotate(-45deg);
+				-webkit-transform: rotate(-45deg);
+			}
+
+			.kanbanRow {
+				display: flex;
+				justify-content: space-evenly;
+			}
+
+			.todoContainer {
+				border: 1px solid black;
+				width: 20vw;
+				display: flex;
+			}
+
+			.board {
+				width: 20vw;
+				border: 1px solid black;
+			}
+
+			.todo {
+				margin-top: 0px;
+			}
+
+			.title {
+				text-align: center;
+			}
+		</style>
+
+		<title>Kanban</title>
+	</head>
+	<body>
+		<nav>
+			<a href="/stars">Stars</a>
+			<a href="/kanban">Kanban</a>
+			<a href="/pokemon">Pokemon</a>
+		</nav>
+
+		<div class="kanban"></div>
+		<script src="./public/dist/kanban.js"></script>
+	</body>
+</html>
